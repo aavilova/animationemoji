@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+
+    .emoji {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      background: url('images/smile 160.png');
+      animation: spin 2s infinite;
+
+    }
+
+    .emoji-eyes {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      background: url('images/smile 160.png');
+      background-position: -160px;
+      animation: eyes 1s steps(1) alternate infinite;
+    }
+
+    .emoji-mouth {
+      width: 150px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      background: url('images/smile 160.png');
+      background-position: -640px;
+      animation: mouth 1s steps(1) alternate infinite;
+    }
+
+    .emoji-hand{
+      width: 70px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      background: url('images/smile 160.png');
+      background-position: -1110px;
+      animation: hand 1s steps(1) alternate infinite;
+    }
+
+    @keyframes spin {
+      0%{transform: rotate(360deg);}
+    }
+
+    @keyframes hand {
+      0% {background-position: -1110px top;}
+      33% {background-position: -1110px top;}
+      66% {background-position: -1265px top;}
+    }
+    @keyframes eyes {
+      0% {background-position: -160px top;}
+      33%{background-position: -327px top;}
+      66%{background-position: -480px top;}
+    }
+
+    @keyframes mouth {
+      0%{background-position: -640px top;}
+      33%{background-position: -800px top;}
+      66%{background-position: -960px top;}
+    }
+
+
+  </style>
+  <body>
+    <div class="emoji">
+      <div class="emoji-eyes">
+
+      </div>
+      <div class="emoji-mouth">
+
+      </div>
+      <div class="emoji-hand">
+
+      </div>
+    </div>
+  </body>
+</html>
